@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Ishan Moudgil — Computer Science student building tested backend systems, data pipelines, and AI-assisted tools."
+      content="Ishan Moudgil — Computer Science student. Backend systems, Go libraries, LLM tooling, Android CI, RL, and data pipelines."
     />
-    <title>Ishan Moudgil</title>
+    <title>Ishan Moudgil · Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=Fraunces:opsz,wght@9..144,600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -34,15 +34,14 @@
     <main>
       <section class="hero container">
         <span class="hero-label">CS + Mathematics · University of Alberta</span>
-        <h1>I build reliable software, tested data systems, and tools people can trust.</h1>
+        <h1>I build backend libraries, tested services, and data systems people can rely on.</h1>
         <p class="hero-lead">
-          Third-year Computer Science student with a minor in Mathematics. I work across
-          backend systems, automated testing, data analysis, and AI-assisted workflows —
-          always with an eye on accuracy, documentation, and whether the output is actually
-          correct.
+          Third-year Computer Science student with a minor in Mathematics. I work across Go HTTP
+          libraries, LLM-powered apps, multi-threaded C++ engines, Android apps with CI, RL
+          prototypes, and full data pipelines — with tests, docs, and reproducible outputs.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a class="btn btn-primary" href="#projects">All projects</a>
           <a
             class="btn btn-secondary"
             href="https://github.com/imoudgil"
@@ -50,30 +49,31 @@
             rel="noopener noreferrer"
             >GitHub</a
           >
-          <a class="btn btn-secondary" href="mailto:moudgilishan3@gmail.com">Email me</a>
+          <a class="btn btn-secondary" href="mailto:moudgilishan3@gmail.com">Email</a>
         </div>
       </section>
 
       <section id="about" class="container">
         <h2>About</h2>
         <p class="section-intro">
-          I'm looking for co-op and internship roles where I can ship real work — whether
-          that's platform libraries, QA, data science, or finance-adjacent analytics.
+          Seven projects below span platform engineering, applied AI, systems programming, mobile,
+          data science, security compliance, and reinforcement learning — all grounded in code I can
+          walk through in an interview.
         </p>
         <div class="about-grid">
           <div class="about-card">
             <p>
-              My projects span Go HTTP libraries, multi-threaded C++ systems, Android apps
-              with CI pipelines, Python data pipelines, and AI workflows with built-in
-              validation. What ties them together is the same habit: test the output, document
-              how you checked it, and make it reproducible for the next person.
+              I care about the same things platform teams care about: clean APIs, structured logging,
+              tests on every push, and documentation the next developer can actually use. servkit is
+              the clearest example — shared Go packages with CI and 74–100% test coverage per
+              package.
             </p>
           </div>
           <div class="about-card">
             <p>
-              Outside of school I train crew at McDonald's — onboarding, SOP compliance, and
-              keeping operations consistent in a high-volume environment. That discipline shows
-              up in how I write code and how I communicate with teams.
+              At McDonald's I train crew on SOPs and file compliance records — the same discipline
+              shows up when I validate LLM outputs, audit configs against baselines, or verify data
+              before it hits a forecast model.
             </p>
           </div>
         </div>
@@ -85,42 +85,42 @@
           <div class="skill-group">
             <h3>Languages</h3>
             <ul>
-              <li>Python, Go, C/C++, Java</li>
-              <li>JavaScript / TypeScript, SQL, R</li>
+              <li>Go, Python, C/C++, Java, TypeScript</li>
+              <li>SQL, R, Bash</li>
             </ul>
           </div>
           <div class="skill-group">
             <h3>Backend &amp; Systems</h3>
             <ul>
-              <li>REST APIs, HTTP servers &amp; clients</li>
-              <li>Multi-threading, concurrency, Linux</li>
-              <li>Docker, Git, GitHub Actions (CI/CD)</li>
+              <li>HTTP/gRPC-style APIs, middleware, observability (slog)</li>
+              <li>Multi-threading, POSIX sockets, concurrency</li>
+              <li>Docker, Git, GitHub Actions CI/CD</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Quality &amp; Data</h3>
+            <h3>AI &amp; Data</h3>
             <ul>
-              <li>Unit &amp; automated testing (pytest, JUnit, Espresso)</li>
-              <li>Data analysis, SQL, Excel / Google Sheets</li>
-              <li>Validation, logging, reproducible debugging</li>
+              <li>OpenAI GPT-4o function calling, PyTorch RL</li>
+              <li>scikit-learn, pandas, SQLite, statistical analysis</li>
+              <li>Supabase, Firebase, Zod validation</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Other</h3>
+            <h3>Quality</h3>
             <ul>
-              <li>AI-assisted development (OpenAI API, Cursor)</li>
-              <li>Technical documentation &amp; presentations</li>
-              <li>Object-oriented design &amp; design patterns</li>
+              <li>pytest, JUnit, Espresso, table-driven tests</li>
+              <li>NIST baseline auditing, compliance documentation</li>
+              <li>Technical writing, presentations (~100 peers)</li>
             </ul>
           </div>
         </div>
       </section>
 
       <section id="projects" class="container">
-        <h2>Selected projects</h2>
+        <h2>Projects</h2>
         <p class="section-intro">
-          A few things I've built recently. More on
-          <a href="https://github.com/imoudgil" target="_blank" rel="noopener noreferrer">GitHub</a>.
+          Selected work from my repos and coursework. Links where public; others available on
+          request.
         </p>
 
         <div class="project-list">
@@ -131,66 +131,66 @@
                   >servkit</a
                 >
               </h3>
-              <span class="project-meta">Go · Open source</span>
+              <span class="project-meta">Go · Open source · Platform library</span>
             </div>
             <div class="project-tags">
               <span class="tag">Go</span>
               <span class="tag">HTTP</span>
+              <span class="tag">slog</span>
               <span class="tag">Middleware</span>
               <span class="tag">CI/CD</span>
             </div>
             <p>
-              Shared Go library for building consistent HTTP microservices — config, structured
-              logging, middleware, health checks, graceful shutdown, and a resilient HTTP client.
+              Shared Go library for consistent HTTP microservices — the kind of building blocks
+              platform teams ship for config, logging, health checks, and resilient clients.
             </p>
             <ul>
-              <li>Composable middleware: request ID, access logging, panic recovery</li>
-              <li>Table-driven tests with <span class="highlight">74–100% coverage</span> per package</li>
-              <li>GitHub Actions CI on every push</li>
+              <li>
+                Packages: <span class="highlight">config</span>, structured
+                <span class="highlight">logging</span>, composable
+                <span class="highlight">middleware</span> (request ID, access logs, panic recovery),
+                <span class="highlight">/healthz</span> + <span class="highlight">/readyz</span>,
+                graceful shutdown server, HTTP client with exponential backoff retry
+              </li>
+              <li>
+                Table-driven tests via <span class="highlight">httptest</span>; GitHub Actions CI
+                with race detector; <span class="highlight">74–100% coverage</span> per package
+              </li>
+              <li>Runnable example, CHANGELOG, MIT license — inner-source style documentation</li>
             </ul>
           </article>
 
           <article class="project-card">
             <div class="project-header">
-              <h3>GrantPath</h3>
-              <span class="project-meta">NatIgnite 2026 · 2nd place</span>
+              <h3>GrantPath (hi-finance-grants)</h3>
+              <span class="project-meta">NatIgnite 2026 · 2nd place · Hackathon</span>
             </div>
             <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">OpenAI API</span>
-              <span class="tag">Next.js</span>
-              <span class="tag">Docker</span>
+              <span class="tag">Next.js 14</span>
+              <span class="tag">GPT-4o</span>
+              <span class="tag">Supabase</span>
+              <span class="tag">Zod</span>
+              <span class="tag">TypeScript</span>
             </div>
             <p>
-              AI-assisted workflow that automated a manual document process with validation
-              controls built in.
+              Grant-matching web app for Canadian students — conversational screening over a
+              48-question dependency graph with structured profile extraction.
             </p>
             <ul>
-              <li>Cut processing time by <span class="highlight">90%</span></li>
-              <li>Verified outputs against expected results before release</li>
-              <li>Presented at NatIgnite 2026 finals; placed 2nd among competing teams</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-              <h3>Retail Demand Analytics</h3>
-              <span class="project-meta">Data science pipeline</span>
-            </div>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">SQL</span>
-              <span class="tag">scikit-learn</span>
-              <span class="tag">SQLite</span>
-            </div>
-            <p>
-              End-to-end CPG retail analytics: synthetic POS data, SQL business queries,
-              statistical analysis, and demand forecasting.
-            </p>
-            <ul>
-              <li>Random Forest forecast: <span class="highlight">R² = 0.79</span>, MAE cut 58% vs baseline</li>
-              <li>Price elasticity, promo lift, and seasonality analysis</li>
-              <li>Full pipeline with charts, SQL results, and reproducible runs</li>
+              <li>
+                Built <span class="highlight">GPT-4o function calling</span> with three tools
+                (update_profile, suggest_quick_replies, mark_complete) over JSON question bank with
+                <span class="highlight">depends_on</span> branching
+              </li>
+              <li>
+                Dual-pass LLM orchestration when tool calls return empty text; custom
+                <span class="highlight">deepMerge</span> for incremental profile + confidence into
+                Supabase sessions
+              </li>
+              <li>
+                11-grant eligibility dataset + Zod-validated API contracts;
+                <span class="highlight">~381-line</span> chat API route; presented at NatIgnite 2026
+              </li>
             </ul>
           </article>
 
@@ -201,56 +201,158 @@
                   href="https://github.com/cmput301-w25/project-tornado_raven"
                   target="_blank"
                   rel="noopener noreferrer"
-                  >Mood-Tracking Android App</a
+                  >MoodTrackerApp (Tornado Raven)</a
                 >
               </h3>
-              <span class="project-meta">6-person team · CMPUT 301</span>
+              <span class="project-meta">CMPUT 301 · 6-person team</span>
             </div>
             <div class="project-tags">
               <span class="tag">Java</span>
               <span class="tag">Firebase</span>
+              <span class="tag">Google Maps</span>
               <span class="tag">JUnit</span>
               <span class="tag">Espresso</span>
             </div>
-            <p>Collaborative Android app with automated test coverage and CI on every push.</p>
+            <p>
+              Social mood-journaling Android app with offline sync, privacy levels, follow graph, and
+              mood map visualization.
+            </p>
             <ul>
-              <li>JUnit unit tests and Espresso UI tests for core flows</li>
-              <li>GitHub Actions pipeline running tests against Firebase emulator</li>
-              <li>Presented to ~100 peers with structured walkthrough</li>
+              <li>
+                <span class="highlight">Offline-first sync</span>: Gson queue in SharedPreferences →
+                Firebase Firestore + Storage on reconnect via NetworkChangeReceiver
+              </li>
+              <li>
+                Privacy-aware follow workflow; Google Maps mood markers with
+                <span class="highlight">5 km proximity</span> filter; photos compressed to
+                <span class="highlight">64 KB</span> before upload
+              </li>
+              <li>
+                GitHub Actions: build + JUnit + Espresso
+                <span class="highlight">connectedCheck</span> against Firestore emulator (API 29)
+              </li>
             </ul>
           </article>
 
           <article class="project-card">
             <div class="project-header">
-              <h3>Neuro-Sync</h3>
-              <span class="project-meta">Systems project</span>
+              <h3>NeuroSync</h3>
+              <span class="project-meta">C++20 · SITL motion engine</span>
             </div>
             <div class="project-tags">
               <span class="tag">C++20</span>
               <span class="tag">POSIX Threads</span>
               <span class="tag">Unix Sockets</span>
+              <span class="tag">Quintic Splines</span>
             </div>
-            <p>Multi-threaded compute engine with isolated loops and instrumented logging.</p>
+            <p>
+              Producer–consumer engine bridging a slow Python policy (~1 Hz) to a
+              <span class="highlight">1000 Hz</span> real-time control loop via IPC and trajectory
+              interpolation.
+            </p>
             <ul>
-              <li>Automated tests for concurrency behavior and reliability</li>
-              <li>Logging for reproducible debugging of intermittent failures</li>
+              <li>
+                <span class="highlight">TrajectoryBuffer</span> (deque + mutex + condition_variable);
+                consumer uses non-blocking <span class="highlight">tryPop()</span> to keep RT loop
+                off the wait path
+              </li>
+              <li>
+                Closed-form <span class="highlight">quintic spline</span> solve for C²-continuous
+                position/velocity/acceleration; <span class="highlight">sleep_until</span> on
+                steady_clock for 1 ms ticks
+              </li>
+              <li>
+                Newline-framed JSON over <span class="highlight">AF_UNIX</span> with partial-read
+                reassembly — zero third-party deps
+              </li>
             </ul>
           </article>
 
           <article class="project-card">
             <div class="project-header">
-              <h3>Controls &amp; Baseline Auditor</h3>
-              <span class="project-meta">Validation tooling</span>
+              <h3>Retail Demand Analytics</h3>
+              <span class="project-meta">End-to-end data science pipeline</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">scikit-learn</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">matplotlib</span>
+            </div>
+            <p>
+              CPG retail analytics mirroring shopper insights workflows: synthetic POS → SQLite →
+              business SQL → EDA → demand forecast.
+            </p>
+            <ul>
+              <li>
+                Synthetic dataset: 30 SKUs, 24 stores, 104 weeks with known elasticity, seasonality,
+                and promo lift; injected dirty rows for real cleaning step
+              </li>
+              <li>
+                Random Forest: <span class="highlight">R² = 0.79</span>, MAE
+                <span class="highlight">8.40</span> on 16-week chronological holdout —
+                <span class="highlight">58% MAE cut</span> vs naive baseline
+              </li>
+              <li>6 business SQL queries; log-log price elasticity per category; optional R/ggplot2 script</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Security Baseline Auditor</h3>
+              <span class="project-meta">NIST SP 800-53 · Compliance tooling</span>
             </div>
             <div class="project-tags">
               <span class="tag">Python</span>
               <span class="tag">JSON</span>
-              <span class="tag">Documentation</span>
+              <span class="tag">GRC</span>
+              <span class="tag">SHA-256</span>
             </div>
-            <p>Compares outputs against a reference baseline and records traceable evidence.</p>
+            <p>
+              Zero-dependency auditor comparing system config JSON against a 20-control NIST-aligned
+              baseline and generating audit-ready gap reports.
+            </p>
             <ul>
-              <li><span class="highlight">20-control</span> baseline with edge-case checking</li>
-              <li>Evidence logs with configuration and reproduction steps</li>
+              <li>
+                <span class="highlight">20 controls</span> across password, access, network, logging,
+                patch domains with severity-tiered SLAs (4h–72h)
+              </li>
+              <li>
+                Deterministic comparators (gte, lte, eq, not_in); append-only audit trail with
+                <span class="highlight">SHA-256</span> report hash for integrity verification
+              </li>
+              <li>Policy-as-data JSON architecture; Markdown gap register + incident runbook linkage</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>RL-Sampler</h3>
+              <span class="project-meta">PyTorch · Curriculum selection prototype</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">Actor-Critic</span>
+              <span class="tag">RL</span>
+            </div>
+            <p>
+              RL-based Accept/Reject agent over document embeddings to prioritize high learning-signal
+              samples for LLM fine-tuning.
+            </p>
+            <ul>
+              <li>
+                <span class="highlight">Actor–Critic</span> with Categorical policy; advantage
+                <span class="highlight">A = r − V(s)</span>; entropy + value loss stabilization
+              </li>
+              <li>
+                Learning-progress reward: accept → predicted proxy loss; reject →
+                <span class="highlight">β = −0.05</span> penalty
+              </li>
+              <li>
+                Co-trained <span class="highlight">PredictedLossHead</span> MLP; pluggable SHA-256
+                embedding pipeline as Cohere API swap-in point
+              </li>
             </ul>
           </article>
         </div>
@@ -263,9 +365,8 @@
           <h3>Crew Trainer — McDonald's Canada</h3>
           <p class="meta">Edmonton, AB · Oct 2023 – Present</p>
           <ul>
-            <li>Train staff on standard operating procedures and document compliance</li>
-            <li>Maintain accurate records and keep operations consistent under pressure</li>
-            <li>Customer-facing service and clear communication across shifts</li>
+            <li>Train staff on SOPs; document and file compliance on procedure adherence</li>
+            <li>High-volume operations, accurate records, customer-facing service</li>
           </ul>
         </div>
 
@@ -273,8 +374,7 @@
           <h3>Autonomous Robotic Vehicle Project (ARVP)</h3>
           <p class="meta">University of Alberta · Mar 2026 – Present</p>
           <ul>
-            <li>Develop shared components in a multi-disciplinary robotics team</li>
-            <li>Git, peer code reviews, and automated validation checks</li>
+            <li>Shared C++/Python components; Git peer reviews and validation checks</li>
           </ul>
         </div>
 
@@ -282,8 +382,7 @@
           <h3>BSc Computer Science, Minor in Mathematics</h3>
           <p class="meta">University of Alberta · Expected Apr 2028</p>
           <ul>
-            <li>Coursework: algorithms, OOP, operating systems, probability &amp; statistics</li>
-            <li>Economics: microeconomics &amp; macroeconomics (ECON 101, 102)</li>
+            <li>Algorithms, OOP, OS/concurrency, probability &amp; statistics, ECON 101/102</li>
           </ul>
         </div>
       </section>
@@ -292,8 +391,7 @@
         <h2>Contact</h2>
         <div class="contact-box">
           <p>
-            Open to co-op and internship opportunities for Fall 2026 and beyond.
-            Based in Edmonton; open to remote roles across Canada.
+            Open to co-op and internship roles (Fall 2026+). Edmonton-based; remote across Canada.
           </p>
           <div class="contact-links">
             <a class="btn btn-primary" href="mailto:moudgilishan3@gmail.com">moudgilishan3@gmail.com</a>
@@ -311,7 +409,7 @@
     </main>
 
     <footer class="site-footer container">
-      <p>© 2026 Ishan Moudgil · Built with HTML, CSS, and a little JS</p>
+      <p>© 2026 Ishan Moudgil</p>
     </footer>
 
     <script src="script.js"></script>
