@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ishan Moudgil — Computer Science student building tested backend systems, data pipelines, and AI-assisted tools."
+    />
+    <title>Ishan Moudgil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:opsz,wght@9..144,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="#">Ishan Moudgil</a>
+        <button class="menu-toggle" type="button" aria-label="Toggle menu">☰</button>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <span class="hero-label">CS + Mathematics · University of Alberta</span>
+        <h1>I build reliable software, tested data systems, and tools people can trust.</h1>
+        <p class="hero-lead">
+          Third-year Computer Science student with a minor in Mathematics. I work across
+          backend systems, automated testing, data analysis, and AI-assisted workflows —
+          always with an eye on accuracy, documentation, and whether the output is actually
+          correct.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View projects</a>
+          <a
+            class="btn btn-secondary"
+            href="https://github.com/imoudgil"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          <a class="btn btn-secondary" href="mailto:moudgilishan3@gmail.com">Email me</a>
+        </div>
+      </section>
+
+      <section id="about" class="container">
+        <h2>About</h2>
+        <p class="section-intro">
+          I'm looking for co-op and internship roles where I can ship real work — whether
+          that's platform libraries, QA, data science, or finance-adjacent analytics.
+        </p>
+        <div class="about-grid">
+          <div class="about-card">
+            <p>
+              My projects span Go HTTP libraries, multi-threaded C++ systems, Android apps
+              with CI pipelines, Python data pipelines, and AI workflows with built-in
+              validation. What ties them together is the same habit: test the output, document
+              how you checked it, and make it reproducible for the next person.
+            </p>
+          </div>
+          <div class="about-card">
+            <p>
+              Outside of school I train crew at McDonald's — onboarding, SOP compliance, and
+              keeping operations consistent in a high-volume environment. That discipline shows
+              up in how I write code and how I communicate with teams.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <ul>
+              <li>Python, Go, C/C++, Java</li>
+              <li>JavaScript / TypeScript, SQL, R</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Backend &amp; Systems</h3>
+            <ul>
+              <li>REST APIs, HTTP servers &amp; clients</li>
+              <li>Multi-threading, concurrency, Linux</li>
+              <li>Docker, Git, GitHub Actions (CI/CD)</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Quality &amp; Data</h3>
+            <ul>
+              <li>Unit &amp; automated testing (pytest, JUnit, Espresso)</li>
+              <li>Data analysis, SQL, Excel / Google Sheets</li>
+              <li>Validation, logging, reproducible debugging</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Other</h3>
+            <ul>
+              <li>AI-assisted development (OpenAI API, Cursor)</li>
+              <li>Technical documentation &amp; presentations</li>
+              <li>Object-oriented design &amp; design patterns</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="container">
+        <h2>Selected projects</h2>
+        <p class="section-intro">
+          A few things I've built recently. More on
+          <a href="https://github.com/imoudgil" target="_blank" rel="noopener noreferrer">GitHub</a>.
+        </p>
+
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-header">
+              <h3>
+                <a href="https://github.com/imoudgil/servkit" target="_blank" rel="noopener noreferrer"
+                  >servkit</a
+                >
+              </h3>
+              <span class="project-meta">Go · Open source</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Go</span>
+              <span class="tag">HTTP</span>
+              <span class="tag">Middleware</span>
+              <span class="tag">CI/CD</span>
+            </div>
+            <p>
+              Shared Go library for building consistent HTTP microservices — config, structured
+              logging, middleware, health checks, graceful shutdown, and a resilient HTTP client.
+            </p>
+            <ul>
+              <li>Composable middleware: request ID, access logging, panic recovery</li>
+              <li>Table-driven tests with <span class="highlight">74–100% coverage</span> per package</li>
+              <li>GitHub Actions CI on every push</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>GrantPath</h3>
+              <span class="project-meta">NatIgnite 2026 · 2nd place</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">OpenAI API</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Docker</span>
+            </div>
+            <p>
+              AI-assisted workflow that automated a manual document process with validation
+              controls built in.
+            </p>
+            <ul>
+              <li>Cut processing time by <span class="highlight">90%</span></li>
+              <li>Verified outputs against expected results before release</li>
+              <li>Presented at NatIgnite 2026 finals; placed 2nd among competing teams</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Retail Demand Analytics</h3>
+              <span class="project-meta">Data science pipeline</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">scikit-learn</span>
+              <span class="tag">SQLite</span>
+            </div>
+            <p>
+              End-to-end CPG retail analytics: synthetic POS data, SQL business queries,
+              statistical analysis, and demand forecasting.
+            </p>
+            <ul>
+              <li>Random Forest forecast: <span class="highlight">R² = 0.79</span>, MAE cut 58% vs baseline</li>
+              <li>Price elasticity, promo lift, and seasonality analysis</li>
+              <li>Full pipeline with charts, SQL results, and reproducible runs</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>
+                <a
+                  href="https://github.com/cmput301-w25/project-tornado_raven"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Mood-Tracking Android App</a
+                >
+              </h3>
+              <span class="project-meta">6-person team · CMPUT 301</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Java</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">JUnit</span>
+              <span class="tag">Espresso</span>
+            </div>
+            <p>Collaborative Android app with automated test coverage and CI on every push.</p>
+            <ul>
+              <li>JUnit unit tests and Espresso UI tests for core flows</li>
+              <li>GitHub Actions pipeline running tests against Firebase emulator</li>
+              <li>Presented to ~100 peers with structured walkthrough</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Neuro-Sync</h3>
+              <span class="project-meta">Systems project</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">C++20</span>
+              <span class="tag">POSIX Threads</span>
+              <span class="tag">Unix Sockets</span>
+            </div>
+            <p>Multi-threaded compute engine with isolated loops and instrumented logging.</p>
+            <ul>
+              <li>Automated tests for concurrency behavior and reliability</li>
+              <li>Logging for reproducible debugging of intermittent failures</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <h3>Controls &amp; Baseline Auditor</h3>
+              <span class="project-meta">Validation tooling</span>
+            </div>
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">JSON</span>
+              <span class="tag">Documentation</span>
+            </div>
+            <p>Compares outputs against a reference baseline and records traceable evidence.</p>
+            <ul>
+              <li><span class="highlight">20-control</span> baseline with edge-case checking</li>
+              <li>Evidence logs with configuration and reproduction steps</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="container">
+        <h2>Experience &amp; education</h2>
+
+        <div class="timeline-item">
+          <h3>Crew Trainer — McDonald's Canada</h3>
+          <p class="meta">Edmonton, AB · Oct 2023 – Present</p>
+          <ul>
+            <li>Train staff on standard operating procedures and document compliance</li>
+            <li>Maintain accurate records and keep operations consistent under pressure</li>
+            <li>Customer-facing service and clear communication across shifts</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Autonomous Robotic Vehicle Project (ARVP)</h3>
+          <p class="meta">University of Alberta · Mar 2026 – Present</p>
+          <ul>
+            <li>Develop shared components in a multi-disciplinary robotics team</li>
+            <li>Git, peer code reviews, and automated validation checks</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <h3>BSc Computer Science, Minor in Mathematics</h3>
+          <p class="meta">University of Alberta · Expected Apr 2028</p>
+          <ul>
+            <li>Coursework: algorithms, OOP, operating systems, probability &amp; statistics</li>
+            <li>Economics: microeconomics &amp; macroeconomics (ECON 101, 102)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="container">
+        <h2>Contact</h2>
+        <div class="contact-box">
+          <p>
+            Open to co-op and internship opportunities for Fall 2026 and beyond.
+            Based in Edmonton; open to remote roles across Canada.
+          </p>
+          <div class="contact-links">
+            <a class="btn btn-primary" href="mailto:moudgilishan3@gmail.com">moudgilishan3@gmail.com</a>
+            <a class="btn btn-secondary" href="tel:7802636496">780-263-6496</a>
+            <a
+              class="btn btn-secondary"
+              href="https://github.com/imoudgil"
+              target="_blank"
+              rel="noopener noreferrer"
+              >github.com/imoudgil</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p>© 2026 Ishan Moudgil · Built with HTML, CSS, and a little JS</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
