@@ -1,51 +1,54 @@
-# Portfolio — Ishan Moudgil
+# My portfolio website
 
-Simple static portfolio site. No build step required.
+This folder is my personal portfolio site — the page recruiters visit to see my projects and contact info.
 
-## Preview locally
+**Live site (after you publish):** https://imoudgil.github.io
 
-Open `index.html` in a browser, or run a local server:
+## What's in here
+
+| File | What it does |
+|------|----------------|
+| `index.html` | The actual website (text, projects, contact) |
+| `styles.css` | Colors, fonts, layout |
+| `script.js` | Mobile menu |
+
+No install step. No npm. Just HTML/CSS.
+
+## View it on your computer
 
 ```bash
 cd portfolio
 python3 -m http.server 8080
-# visit http://localhost:8080
 ```
 
-## Deploy to GitHub Pages (free)
+Open http://localhost:8080 in your browser.
 
-### Option A — Personal site (recommended)
+## Put it online (GitHub Pages)
 
-1. Create a new GitHub repo named **`imoudgil.github.io`**
-2. Push the contents of this `portfolio/` folder to the `main` branch
-3. In repo Settings → Pages → Source: **Deploy from branch → main → / (root)**
-4. Your site will be live at **https://imoudgil.github.io**
+1. On GitHub, create a **new empty repo** named exactly: `imoudgil.github.io`
+2. Run these commands (repo is already set up locally — skip `git init`):
 
 ```bash
 cd portfolio
-git init
-git add .
-git commit -m "Add portfolio site"
-git branch -M main
 git remote add origin https://github.com/imoudgil/imoudgil.github.io.git
 git push -u origin main
 ```
 
-### Option B — Project site
+3. On GitHub: **Settings → Pages → Branch: main → Save**
+4. Wait ~1 minute. Your site is live at **https://imoudgil.github.io**
 
-1. Create repo `portfolio` (or any name)
-2. Push this folder
-3. Enable GitHub Pages on `main`
-4. Site URL: `https://imoudgil.github.io/portfolio/`
+## Important: this repo is NOT your project code
 
-## Customize
+This repo only holds the **website**. Your projects (servkit, GrantPath, etc.) live in **separate GitHub repos**. The website just links to them.
 
-- Edit project links in `index.html` when repos go public
-- Add a PDF resume link once you host one
-- Replace placeholder project cards with GitHub links as you push more repos
+## Edit the site
 
-## Files
+Change project text or links in `index.html`, then:
 
-- `index.html` — content and structure
-- `styles.css` — layout and theme
-- `script.js` — mobile navigation toggle
+```bash
+git add .
+git commit -m "Update portfolio"
+git push
+```
+
+The live site updates automatically after a minute.
