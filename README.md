@@ -2,6 +2,8 @@
 
 My personal site: **https://imoudgil.github.io**
 
+Five featured CS projects: servkit, GrantPath, MoodTrackerApp, NeuroSync, and the growth/risk analytics pipeline.
+
 ## Files
 
 - `index.html` — the website
