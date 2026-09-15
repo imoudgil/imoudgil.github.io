@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Ishan Moudgil — Computer Science student. Backend systems, Go libraries, LLM tooling, Android CI, RL, and data pipelines."
+      content="Ishan Moudgil — Computer Science student. Backend systems, Go libraries, LLM tooling, Android CI, systems programming, and data science."
     />
     <title>Ishan Moudgil · Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -36,12 +36,13 @@
         <span class="hero-label">CS + Mathematics · University of Alberta</span>
         <h1>I build backend libraries, tested services, and data systems people can rely on.</h1>
         <p class="hero-lead">
-          Third-year Computer Science student with a minor in Mathematics. I work across Go HTTP
-          libraries, LLM-powered apps, multi-threaded C++ engines, Android apps with CI, RL
-          prototypes, and full data pipelines — with tests, docs, and reproducible outputs.
+          Third-year Computer Science student with a minor in Mathematics. Five selected projects:
+          a tested Go service library, an LLM screening app, an Android app with CI, a multi-threaded
+          C++ motion engine, and a growth/risk analytics pipeline — with tests, docs, and
+          reproducible outputs.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">All projects</a>
+          <a class="btn btn-primary" href="#projects">Selected projects</a>
           <a
             class="btn btn-secondary"
             href="https://github.com/imoudgil"
@@ -56,24 +57,23 @@
       <section id="about" class="container">
         <h2>About</h2>
         <p class="section-intro">
-          Seven projects below span platform engineering, applied AI, systems programming, mobile,
-          data science, security compliance, and reinforcement learning — all grounded in code I can
-          walk through in an interview.
+          Five CS projects below: platform engineering, applied AI, mobile with CI, systems
+          programming, and data science — all grounded in code I can walk through in an interview.
         </p>
         <div class="about-grid">
           <div class="about-card">
             <p>
               I care about the same things platform teams care about: clean APIs, structured logging,
               tests on every push, and documentation the next developer can actually use. servkit is
-              the clearest example — shared Go packages with CI and 74–100% test coverage per
-              package.
+              the clearest example — shared Go packages with race-detector CI and up to 100%
+              coverage on core packages (health and logging).
             </p>
           </div>
           <div class="about-card">
             <p>
               At McDonald's I train crew on SOPs and file compliance records — the same discipline
-              shows up when I validate LLM outputs, audit configs against baselines, or verify data
-              before it hits a forecast model.
+              shows up when I validate LLM tool calls, write tests for shared libraries, or check
+              experiment results against known ground truth.
             </p>
           </div>
         </div>
@@ -100,7 +100,7 @@
           <div class="skill-group">
             <h3>AI &amp; Data</h3>
             <ul>
-              <li>OpenAI GPT-4o function calling, PyTorch RL</li>
+              <li>OpenAI GPT-4o function calling, causal inference, A/B analysis</li>
               <li>scikit-learn, pandas, SQLite, statistical analysis</li>
               <li>Supabase, Firebase, Zod validation</li>
             </ul>
@@ -108,8 +108,8 @@
           <div class="skill-group">
             <h3>Quality</h3>
             <ul>
-              <li>pytest, JUnit, Espresso, table-driven tests</li>
-              <li>NIST baseline auditing, compliance documentation</li>
+              <li>Go table-driven tests, JUnit, Espresso, GitHub Actions</li>
+              <li>Chronological ML holdouts, CUPED, matched DiD</li>
               <li>Technical writing, presentations (~100 peers)</li>
             </ul>
           </div>
@@ -119,8 +119,7 @@
       <section id="projects" class="container">
         <h2>Projects</h2>
         <p class="section-intro">
-          Selected work from my repos and coursework. Links where public; others available on
-          request.
+          Five CS projects. Links where public; others available on request.
         </p>
 
         <div class="project-list">
@@ -154,7 +153,8 @@
               </li>
               <li>
                 Table-driven tests via <span class="highlight">httptest</span>; GitHub Actions CI
-                with race detector; <span class="highlight">74–100% coverage</span> per package
+                with race detector; core packages up to
+                <span class="highlight">100% coverage</span> (middleware 97%, client 91%, auth 88%)
               </li>
               <li>Runnable example, CHANGELOG, MIT license — inner-source style documentation</li>
             </ul>
@@ -270,88 +270,35 @@
 
           <article class="project-card">
             <div class="project-header">
-              <h3>Retail Demand Analytics</h3>
-              <span class="project-meta">End-to-end data science pipeline</span>
+              <h3>Growth &amp; Risk Analytics</h3>
+              <span class="project-meta">Python · Experimentation + causal + fraud</span>
             </div>
             <div class="project-tags">
               <span class="tag">Python</span>
               <span class="tag">SQL</span>
               <span class="tag">scikit-learn</span>
-              <span class="tag">SQLite</span>
-              <span class="tag">matplotlib</span>
+              <span class="tag">CUPED</span>
+              <span class="tag">DiD</span>
             </div>
             <p>
-              CPG retail analytics mirroring shopper insights workflows: synthetic POS → SQLite →
-              business SQL → EDA → demand forecast.
+              End-to-end growth and risk pipeline on synthetic fintech data with known ground truth:
+              SQL warehouse, randomised experiment, observational causal study, and cost-aware fraud
+              model.
             </p>
             <ul>
               <li>
-                Synthetic dataset: 30 SKUs, 24 stores, 104 weeks with known elasticity, seasonality,
-                and promo lift; injected dirty rows for real cleaning step
+                60k clients and 200k transactions in SQLite; CUPED recovers a
+                <span class="highlight">+$18.88</span> deposit lift (truth +$18) with
+                <span class="highlight">80.8%</span> variance reduction
               </li>
               <li>
-                Random Forest: <span class="highlight">R² = 0.79</span>, MAE
-                <span class="highlight">8.40</span> on 16-week chronological holdout —
-                <span class="highlight">58% MAE cut</span> vs naive baseline
-              </li>
-              <li>6 business SQL queries; log-log price elasticity per category; optional R/ggplot2 script</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-              <h3>Security Baseline Auditor</h3>
-              <span class="project-meta">NIST SP 800-53 · Compliance tooling</span>
-            </div>
-            <div class="project-tags">
-              <span class="tag">Python</span>
-              <span class="tag">JSON</span>
-              <span class="tag">GRC</span>
-              <span class="tag">SHA-256</span>
-            </div>
-            <p>
-              Zero-dependency auditor comparing system config JSON against a 20-control NIST-aligned
-              baseline and generating audit-ready gap reports.
-            </p>
-            <ul>
-              <li>
-                <span class="highlight">20 controls</span> across password, access, network, logging,
-                patch domains with severity-tiered SLAs (4h–72h)
+                Propensity-matched difference-in-differences recovers
+                <span class="highlight">+$25.54/mo</span> vs a naive
+                <span class="highlight">+$126</span> (about 5× too high)
               </li>
               <li>
-                Deterministic comparators (gte, lte, eq, not_in); append-only audit trail with
-                <span class="highlight">SHA-256</span> report hash for integrity verification
-              </li>
-              <li>Policy-as-data JSON architecture; Markdown gap register + incident runbook linkage</li>
-            </ul>
-          </article>
-
-          <article class="project-card">
-            <div class="project-header">
-              <h3>RL-Sampler</h3>
-              <span class="project-meta">PyTorch · Curriculum selection prototype</span>
-            </div>
-            <div class="project-tags">
-              <span class="tag">PyTorch</span>
-              <span class="tag">Actor-Critic</span>
-              <span class="tag">RL</span>
-            </div>
-            <p>
-              RL-based Accept/Reject agent over document embeddings to prioritize high learning-signal
-              samples for LLM fine-tuning.
-            </p>
-            <ul>
-              <li>
-                <span class="highlight">Actor–Critic</span> with Categorical policy; advantage
-                <span class="highlight">A = r − V(s)</span>; entropy + value loss stabilization
-              </li>
-              <li>
-                Learning-progress reward: accept → predicted proxy loss; reject →
-                <span class="highlight">β = −0.05</span> penalty
-              </li>
-              <li>
-                Co-trained <span class="highlight">PredictedLossHead</span> MLP; pluggable SHA-256
-                embedding pipeline as Cohere API swap-in point
+                Fraud classifier: PR-AUC <span class="highlight">0.134</span>, cost-optimal
+                threshold cuts expected loss <span class="highlight">63%</span>
               </li>
             </ul>
           </article>
